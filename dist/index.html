@@ -4,30 +4,114 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
-    <link href="css/bootstrap-grid.min.css" />
     <title>new</title>
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__wrapper">
-          <div class="row">
-            <div class="col-3">
+      <div class="header__wrapper">
+        <div class="container-fluid container--100vh">
+          <div
+            class="height--100 row justify-content-center align-items-center"
+          >
+            <div class="col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7 text--center">
               <a href="#" class="logo">
-                <img src="./img/logo.svg" alt="logo" />
+                <img src="./img/logo.svg" alt="logo" class="logotype" />
               </a>
               <h1 class="header__title">
-                Find the best place to rest while traveling
+                Find the
+                <span class="text--acua">best place to rest</span> while
+                traveling
               </h1>
-              <a href="#">Registration</a>
+              <a href="#form__title" class="registration" id="registration"
+                >Registration</a
+              >
             </div>
           </div>
         </div>
       </div>
     </header>
-    <main class="mailn"></main>
-
+    <main class="main">
+      <div class="form__wrapper">
+        <div class="container-fluid height--100">
+          <div
+            class="row height--100 justify-content-center align-items-center"
+          >
+            <div class="col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7">
+              <h3 class="form__title" id="form__title">
+                <span class="text--acua">Sign Up </span>and find the best place
+                to rest while traveling
+              </h3>
+              <form class="form" id="form" method="post" action="#">
+                <div class="form__row">
+                  <div class="form__block">
+                    <input class="input" type="name" id="FirstName" />
+                    <label class="input__label" for="FirstName">
+                      First Name</label
+                    >
+                    <div class="input__text"></div>
+                  </div>
+                  <div class="form__block">
+                    <input class="input" type="name" id="SecondName" >
+                    <label class="input__label" for="SecondName"
+                      >Second Name</label
+                    >
+                    <div class="input__text"></div>
+                  </div>
+                  <div class="form__block">
+                    <select class="input" id="Country">
+                      <option hidden></option>
+                      <option value="Afghanistan">Afghanistan</option>
+                      <option value="Albania">Albania</option>
+                      <option value="Algeria">Algeria</option>
+                      <option value="Andorra">Andorra</option>
+                    </select>
+                    <label class="input__label" for="Country">
+                      Country</label
+                    >
+                    <div class="input__text"></div>
+                  </div>
+                  <div class="form__block">
+                    <input class="input" type="tel" id="Phone" />
+                    <label class="input__label" for="Phone">
+                      Phone</label>
+                      <div class="input__text"></div>
+                  </div>
+                  <div class="form__block">
+                    <input class="input" type="password" id="password"/>
+                    <label class="input__label" for="password">
+                      Password</label>
+                      <div class="input__text"></div>
+                  </div>
+                  <div class="form__block">
+                    <input class="input" type="password" id="ConfirmPassword"/>
+                    <label class="input__label" for="ConfirmPassword">
+                      Confirm Password</label>
+                      <div class="input__text"></div>
+                  </div>
+                  <div class="form__block">
+                    <input class="input" type="text" id="email"/>
+                    <label class="input__label" for="email">
+                      Email</label>
+                      <div class="input__text"></div>
+                  </div>
+                  <div class="form__block">
+                    <input class="input checkbox" type="checkbox" id="checkbox"/>
+                    <label class="checkbox__label" for="checkbox">
+                      I agree to the <a href="#" target="_blanck" class="checkbox__link">Terms & Conditions</a></label>
+                  </div>
+                  <div class="form__block">
+                    <button type="submit" class="submit">Sign Up</button>
+                  </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="js/app.min.js"></script>
   </body>
 </html>
